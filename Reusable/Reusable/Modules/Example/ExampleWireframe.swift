@@ -8,45 +8,30 @@
 
 import UIKit
 
-class ExampleWireframe: NSObject, ExampleWireframeProtocol {
+struct StoryBoardExample {
+    
+    static let storyboard = StoryBoardExample()
+    let mainStoryBoard = UIStoryboard(name: "Example", bundle: nil)
+    
+    func instantiateView<T: UIViewController>(_: T.Type, title: String? = nil) -> T {
+        let controller = mainStoryBoard.instantiateViewController(withIdentifier: String(describing: T.self)) as! T
+        controller.title = title
+        return controller
+    }
+    
+}
 
-	// MARK: - Constants
-
-	private let storyBoardName = "Example"
-	private let viewIdentifier = "ExampleView"
-
-	// MARK: - Viper Module Properties
-
-	weak var view: ExampleView!
-
-	// MARK: - Constructors
-
-	override init() {
-		super.init()
-
-		let view = self.viewControllerFromStoryboard()
-		let interactor = ExampleInteractor()
-		let presenter = ExamplePresenter()
-
-		presenter.interactor = interactor
-		presenter.wireframe = self
-		presenter.view = view
-
-		view.presenter = presenter
-		interactor.output = presenter
-
-		self.view = view
-	}
-
-    // MARK: - ExampleWireframeProtocol
-
-	// MARK: - Private methods
-
-	private func viewControllerFromStoryboard() -> ExampleView {
-		let storyboard = UIStoryboard(name: self.storyBoardName, bundle: nil)
-		let viewController = storyboard.instantiateViewController(withIdentifier: self.viewIdentifier)
-
-		return viewController as! ExampleView
-	}
-
+// MARK: - ExampleWireframeProtocol
+extension MainWireframe: ExampleWireframeProtocol {
+    
+    func start() -> UIViewController {
+        let controller = StoryBoardExample.storyboard.instantiateView(ExampleView.self)
+        let presenter = ExamplePresenter()
+        
+        presenter.wireframe = self
+        presenter.view = controller
+        controller.presenter = presenter
+        
+        return controller
+    }
 }
