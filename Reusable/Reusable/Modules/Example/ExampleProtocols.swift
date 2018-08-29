@@ -6,7 +6,7 @@
 //  Copyright © 2018 Glauco Moraes. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 // MARK: - Router
 
@@ -23,7 +23,7 @@ protocol ExampleInteractorInputProtocol {
 // MARK: - Presenter
 
 protocol ExamplePresenterInputProtocol: class {
-
+    func setupExampleTableView(_ exampleTableView: UITableView)
 }
 
 protocol ExampleInteractorOutputProtocol: class {

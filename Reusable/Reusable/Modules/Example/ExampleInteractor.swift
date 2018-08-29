@@ -13,9 +13,4 @@ class ExampleInteractor: NSObject, ExampleInteractorInputProtocol {
 	// MARK: - Viper Module Properties
 
     weak var output: ExampleInteractorOutputProtocol!
-
-	// MARK: - ExampleInteractorInputProtocol
-
-    // MARK: - Private Methods
-
 }

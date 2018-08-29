@@ -13,15 +13,16 @@ class ExampleView: UIViewController, ExamplePresenterOutputProtocol {
 	// MARK: - Viper Module Properties
 
 	var presenter: ExamplePresenterInputProtocol!
+    
+    // MARK: - IBOutlet
 
-	// MARK: - Override methods
+    @IBOutlet weak var exampleTableView: UITableView!
+    
+    // MARK: - Override methods
 
 	override func viewDidLoad() {
         super.viewDidLoad()
+        self.presenter.setupExampleTableView(self.exampleTableView)
     }
-
-    // MARK: - ExamplePresenterOutputProtocol
-
-	// MARK: - Private Methods
 
 }

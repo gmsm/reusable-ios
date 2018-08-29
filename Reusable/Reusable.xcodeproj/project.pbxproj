@@ -19,6 +19,8 @@
 		2A790DD62137088200A471FB /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A790DD02137088200A471FB /* ExampleView.swift */; };
 		2A790DD72137088200A471FB /* ExampleWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A790DD12137088200A471FB /* ExampleWireframe.swift */; };
 		2A790DD9213709A000A471FB /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A790DD8213709A000A471FB /* MainWireframe.swift */; };
+		2A790DDD21370EF300A471FB /* ExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A790DDB21370EF300A471FB /* ExampleCell.swift */; };
+		2A790DDE21370EF300A471FB /* ExampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A790DDC21370EF300A471FB /* ExampleCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		2A790DD02137088200A471FB /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
 		2A790DD12137088200A471FB /* ExampleWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleWireframe.swift; sourceTree = "<group>"; };
 		2A790DD8213709A000A471FB /* MainWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
+		2A790DDB21370EF300A471FB /* ExampleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCell.swift; sourceTree = "<group>"; };
+		2A790DDC21370EF300A471FB /* ExampleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		2A790DCB2137086300A471FB /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				2A790DDA21370ED300A471FB /* Cells */,
 				2A790DCC2137088200A471FB /* Example.storyboard */,
 				2A790DCD2137088200A471FB /* ExamplePresenter.swift */,
 				2A790DCE2137088200A471FB /* ExampleProtocols.swift */,
@@ -123,6 +128,15 @@
 				2A790DD12137088200A471FB /* ExampleWireframe.swift */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		2A790DDA21370ED300A471FB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2A790DDB21370EF300A471FB /* ExampleCell.swift */,
+				2A790DDC21370EF300A471FB /* ExampleCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A790DDE21370EF300A471FB /* ExampleCell.xib in Resources */,
 				2A790DBC2137058A00A471FB /* LaunchScreen.storyboard in Resources */,
 				2A790DD22137088200A471FB /* Example.storyboard in Resources */,
 				2A790DB92137058A00A471FB /* Assets.xcassets in Resources */,
@@ -196,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A790DDD21370EF300A471FB /* ExampleCell.swift in Sources */,
 				2A790DD42137088200A471FB /* ExampleProtocols.swift in Sources */,
 				2A790DD32137088200A471FB /* ExamplePresenter.swift in Sources */,
 				2A790DD72137088200A471FB /* ExampleWireframe.swift in Sources */,

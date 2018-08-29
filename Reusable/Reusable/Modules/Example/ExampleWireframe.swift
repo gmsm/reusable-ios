@@ -18,7 +18,6 @@ struct StoryBoardExample {
         controller.title = title
         return controller
     }
-    
 }
 
 // MARK: - ExampleWireframeProtocol
