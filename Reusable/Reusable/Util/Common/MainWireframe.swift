@@ -22,6 +22,7 @@ class MainWireframe: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.barStyleBlack()
     }
     
     func launch() {

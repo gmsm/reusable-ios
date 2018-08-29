@@ -21,6 +21,7 @@
 		2A790DD9213709A000A471FB /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A790DD8213709A000A471FB /* MainWireframe.swift */; };
 		2A790DDD21370EF300A471FB /* ExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A790DDB21370EF300A471FB /* ExampleCell.swift */; };
 		2A790DDE21370EF300A471FB /* ExampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A790DDC21370EF300A471FB /* ExampleCell.xib */; };
+		2A790DE021371A6F00A471FB /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A790DDF21371A6F00A471FB /* UINavigationControllerExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		2A790DD8213709A000A471FB /* MainWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
 		2A790DDB21370EF300A471FB /* ExampleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCell.swift; sourceTree = "<group>"; };
 		2A790DDC21370EF300A471FB /* ExampleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleCell.xib; sourceTree = "<group>"; };
+		2A790DDF21371A6F00A471FB /* UINavigationControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				2A790DC82137076E00A471FB /* UITableViewExtensions.swift */,
+				2A790DDF21371A6F00A471FB /* UINavigationControllerExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				2A790DD9213709A000A471FB /* MainWireframe.swift in Sources */,
 				2A790DC7213706ED00A471FB /* Reusable.swift in Sources */,
 				2A790DB22137058900A471FB /* AppDelegate.swift in Sources */,
+				2A790DE021371A6F00A471FB /* UINavigationControllerExtensions.swift in Sources */,
 				2A790DC92137076E00A471FB /* UITableViewExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
