@@ -14,6 +14,12 @@
 		2A790DBC2137058A00A471FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A790DBA2137058A00A471FB /* LaunchScreen.storyboard */; };
 		2A790DC7213706ED00A471FB /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A790DC6213706ED00A471FB /* Reusable.swift */; };
 		2A790DC92137076E00A471FB /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A790DC82137076E00A471FB /* UITableViewExtensions.swift */; };
+		2A790DD22137088200A471FB /* Example.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A790DCC2137088200A471FB /* Example.storyboard */; };
+		2A790DD32137088200A471FB /* ExamplePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A790DCD2137088200A471FB /* ExamplePresenter.swift */; };
+		2A790DD42137088200A471FB /* ExampleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A790DCE2137088200A471FB /* ExampleProtocols.swift */; };
+		2A790DD52137088200A471FB /* ExampleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A790DCF2137088200A471FB /* ExampleInteractor.swift */; };
+		2A790DD62137088200A471FB /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A790DD02137088200A471FB /* ExampleView.swift */; };
+		2A790DD72137088200A471FB /* ExampleWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A790DD12137088200A471FB /* ExampleWireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		2A790DBD2137058A00A471FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A790DC6213706ED00A471FB /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		2A790DC82137076E00A471FB /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		2A790DCC2137088200A471FB /* Example.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Example.storyboard; sourceTree = "<group>"; };
+		2A790DCD2137088200A471FB /* ExamplePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePresenter.swift; sourceTree = "<group>"; };
+		2A790DCE2137088200A471FB /* ExampleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleProtocols.swift; sourceTree = "<group>"; };
+		2A790DCF2137088200A471FB /* ExampleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleInteractor.swift; sourceTree = "<group>"; };
+		2A790DD02137088200A471FB /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		2A790DD12137088200A471FB /* ExampleWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleWireframe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,7 @@
 				2A790DB82137058A00A471FB /* Assets.xcassets */,
 				2A790DBA2137058A00A471FB /* LaunchScreen.storyboard */,
 				2A790DBD2137058A00A471FB /* Info.plist */,
+				2A790DCA2137085600A471FB /* Modules */,
 				2A790DC32137069700A471FB /* Util */,
 			);
 			path = Reusable;
@@ -72,8 +85,8 @@
 		2A790DC32137069700A471FB /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				2A790DC5213706C100A471FB /* Extensions */,
 				2A790DC4213706A400A471FB /* Common */,
+				2A790DC5213706C100A471FB /* Extensions */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -92,6 +105,27 @@
 				2A790DC82137076E00A471FB /* UITableViewExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2A790DCA2137085600A471FB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2A790DCB2137086300A471FB /* Example */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		2A790DCB2137086300A471FB /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				2A790DCC2137088200A471FB /* Example.storyboard */,
+				2A790DCD2137088200A471FB /* ExamplePresenter.swift */,
+				2A790DCE2137088200A471FB /* ExampleProtocols.swift */,
+				2A790DCF2137088200A471FB /* ExampleInteractor.swift */,
+				2A790DD02137088200A471FB /* ExampleView.swift */,
+				2A790DD12137088200A471FB /* ExampleWireframe.swift */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A790DBC2137058A00A471FB /* LaunchScreen.storyboard in Resources */,
+				2A790DD22137088200A471FB /* Example.storyboard in Resources */,
 				2A790DB92137058A00A471FB /* Assets.xcassets in Resources */,
 				2A790DB72137058900A471FB /* Main.storyboard in Resources */,
 			);
@@ -165,6 +200,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A790DD42137088200A471FB /* ExampleProtocols.swift in Sources */,
+				2A790DD32137088200A471FB /* ExamplePresenter.swift in Sources */,
+				2A790DD72137088200A471FB /* ExampleWireframe.swift in Sources */,
+				2A790DD52137088200A471FB /* ExampleInteractor.swift in Sources */,
+				2A790DD62137088200A471FB /* ExampleView.swift in Sources */,
 				2A790DC7213706ED00A471FB /* Reusable.swift in Sources */,
 				2A790DB42137058900A471FB /* ViewController.swift in Sources */,
 				2A790DB22137058900A471FB /* AppDelegate.swift in Sources */,
